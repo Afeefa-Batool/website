@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    width:100%;
+    height: 100vh;
+   /* background-image: url('pics/banner.jpg');
+    background-size: cover;*/
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(33,64,65,0.7)),url('pics/banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#logo{
+    height: 90px;
+    cursor: pointer;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:blanchedalmond;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:teal;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    color: blanchedalmond;
+    transform: translateY(-50%);
+}
+.content h1{
+    font-size: 70px;
+    font-family: 'Dancing Script', cursive;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 200;
+    list-style: 25px;
+    font-family: 'Pattaya', sans-serif;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    margin: 20px 10px;
+    border-radius: 25px;
+    border: 2px solid seagreen;
+    background: transparent;
+    color: blanchedalmond;
+    cursor: pointer;
+    position: relative;
+}
+span{
+    background:darkseagreen;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+#head1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 200;
+    margin-top: 25px;
+}
+.section2{
+    width: 100%;
+    height: 100vh;
+    background-image: url('pics/pic1.jpg');
+    background-size: cover;
+    background-position: center;
+}
